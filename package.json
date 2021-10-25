@@ -1,0 +1,25 @@
+{
+  "name": "docker-full-course",
+  "version": "1.0.0",
+  "licence": "MIT",
+  "description": "Docker with express API full course from FreeCodeCamp / Sanjeev Thiyagarajan",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "m1roh",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-redis": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.11",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

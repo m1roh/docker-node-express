@@ -1,0 +1,23 @@
+version: "3.0"
+
+services:
+  nginx:
+    ports:
+      - "3000:80"
+    depends_on:
+      - node-express-api
+  node-express-api:
+    build:
+      args:
+        NODE_ENV: development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+      - MONGO_USER=m1roh
+      - MONGO_PWD=S7rongP4ssw0rd
+      - REDIS_SECRET=secret
+    command: npm run dev
+

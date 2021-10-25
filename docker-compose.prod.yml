@@ -1,0 +1,14 @@
+version: "3.0"
+
+services:
+  nginx:
+    ports:
+      - "80:80"
+  node-express-api:
+    build:
+      args:
+        NODE_ENV: production
+    environment:
+      - PORT=3333
+      - NODE_ENV=production
+    command: yarn start
