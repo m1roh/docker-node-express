@@ -3,7 +3,7 @@ version: "3.0"
 services:
   nginx:
     ports:
-      - "80:80"
+      - "3333:80"
   node-express-api:
     build:
       args:
