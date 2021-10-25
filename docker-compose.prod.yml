@@ -9,6 +9,13 @@ services:
       args:
         NODE_ENV: production
     environment:
-      - PORT=3333
+      - PORT=${PORT}
       - NODE_ENV=production
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PWD=${MONGO_PWD}
+      - REDIS_SECRET=${REDIS_SECRET}
     command: yarn start
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
