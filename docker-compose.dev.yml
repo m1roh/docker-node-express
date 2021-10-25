@@ -20,4 +20,8 @@ services:
       - MONGO_PWD=S7rongP4ssw0rd
       - REDIS_SECRET=secret
     command: npm run dev
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=m1roh
+      - MONGO_INITDB_ROOT_PASSWORD=S7rongP4ssw0rd
 
